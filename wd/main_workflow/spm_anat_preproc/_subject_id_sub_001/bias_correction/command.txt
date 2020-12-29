@@ -1,0 +1,2 @@
+N4BiasFieldCorrection --bspline-fitting [ 300 ] -d 3 --input-image /home/noobron/rough/mri_pre_process/data/sub_001/session_1/anat_1/mr_img.nii.gz --convergence [ 50x50x30x20, 1e-06 ] --output [ mr_img_corrected.nii.gz, mr_img_bias.nii.gz ] --shrink-factor 3
+

@@ -1,0 +1,16 @@
+[
+    [
+        "arg1",
+        "sub_001"
+    ],
+    [
+        "function_str",
+        "def func(arg1): import os; return os.path.join(arg1)"
+    ],
+    [
+        "needed_outputs",
+        [
+            "out"
+        ]
+    ]
+]

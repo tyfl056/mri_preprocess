@@ -1,0 +1,184 @@
+{
+    "groups": [
+        {
+            "name": "Group_00001",
+            "procs": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11
+            ],
+            "total": 12
+        }
+    ],
+    "links": [
+        {
+            "source": 0,
+            "target": 8,
+            "value": 1
+        },
+        {
+            "source": 8,
+            "target": 11,
+            "value": 1
+        },
+        {
+            "source": 3,
+            "target": 11,
+            "value": 1
+        },
+        {
+            "source": 10,
+            "target": 11,
+            "value": 1
+        },
+        {
+            "source": 7,
+            "target": 11,
+            "value": 1
+        },
+        {
+            "source": 6,
+            "target": 11,
+            "value": 1
+        },
+        {
+            "source": 0,
+            "target": 1,
+            "value": 1
+        },
+        {
+            "source": 1,
+            "target": 2,
+            "value": 1
+        },
+        {
+            "source": 2,
+            "target": 3,
+            "value": 1
+        },
+        {
+            "source": 3,
+            "target": 10,
+            "value": 1
+        },
+        {
+            "source": 9,
+            "target": 10,
+            "value": 1
+        },
+        {
+            "source": 3,
+            "target": 7,
+            "value": 1
+        },
+        {
+            "source": 3,
+            "target": 4,
+            "value": 1
+        },
+        {
+            "source": 3,
+            "target": 5,
+            "value": 1
+        },
+        {
+            "source": 4,
+            "target": 5,
+            "value": 1
+        },
+        {
+            "source": 3,
+            "target": 6,
+            "value": 1
+        },
+        {
+            "source": 5,
+            "target": 6,
+            "value": 1
+        }
+    ],
+    "maxN": 12,
+    "nodes": [
+        {
+            "group": 1,
+            "name": "0_selectfiles",
+            "report": "/_subject_id_sub_001/selectfiles/_report/report.rst",
+            "result": "/_subject_id_sub_001/selectfiles/result_selectfiles.pklz"
+        },
+        {
+            "group": 1,
+            "name": "1_bias_correction",
+            "report": "/spm_anat_preproc/_subject_id_sub_001/bias_correction/_report/report.rst",
+            "result": "/spm_anat_preproc/_subject_id_sub_001/bias_correction/result_bias_correction.pklz"
+        },
+        {
+            "group": 1,
+            "name": "2_gunzip_anat",
+            "report": "/spm_anat_preproc/_subject_id_sub_001/gunzip_anat/_report/report.rst",
+            "result": "/spm_anat_preproc/_subject_id_sub_001/gunzip_anat/result_gunzip_anat.pklz"
+        },
+        {
+            "group": 1,
+            "name": "3_new_segment",
+            "report": "/spm_anat_preproc/_subject_id_sub_001/new_segment/_report/report.rst",
+            "result": "/spm_anat_preproc/_subject_id_sub_001/new_segment/result_new_segment.pklz"
+        },
+        {
+            "group": 1,
+            "name": "4_gm-wm_image",
+            "report": "/spm_anat_preproc/_subject_id_sub_001/gm-wm_image/_report/report.rst",
+            "result": "/spm_anat_preproc/_subject_id_sub_001/gm-wm_image/result_gm-wm_image.pklz"
+        },
+        {
+            "group": 1,
+            "name": "5_copy_header",
+            "report": "/spm_anat_preproc/_subject_id_sub_001/copy_header/_report/report.rst",
+            "result": "/spm_anat_preproc/_subject_id_sub_001/copy_header/result_copy_header.pklz"
+        },
+        {
+            "group": 1,
+            "name": "6_direct",
+            "report": "/spm_anat_preproc/_subject_id_sub_001/direct/_report/report.rst",
+            "result": "/spm_anat_preproc/_subject_id_sub_001/direct/result_direct.pklz"
+        },
+        {
+            "group": 1,
+            "name": "7_brain_mask",
+            "report": "/spm_anat_preproc/_subject_id_sub_001/brain_mask/_report/report.rst",
+            "result": "/spm_anat_preproc/_subject_id_sub_001/brain_mask/result_brain_mask.pklz"
+        },
+        {
+            "group": 1,
+            "name": "8_joinpath",
+            "report": "/_subject_id_sub_001/joinpath/_report/report.rst",
+            "result": "/_subject_id_sub_001/joinpath/result_joinpath.pklz"
+        },
+        {
+            "group": 1,
+            "name": "9_tpm_bbox",
+            "report": "/spm_anat_preproc/tpm_bbox/_report/report.rst",
+            "result": "/spm_anat_preproc/tpm_bbox/result_tpm_bbox.pklz"
+        },
+        {
+            "group": 1,
+            "name": "10_warp_anat",
+            "report": "/spm_anat_preproc/_subject_id_sub_001/warp_anat/_report/report.rst",
+            "result": "/spm_anat_preproc/_subject_id_sub_001/warp_anat/result_warp_anat.pklz"
+        },
+        {
+            "group": 1,
+            "name": "11_datasink",
+            "report": "/_subject_id_sub_001/datasink/_report/report.rst",
+            "result": "/_subject_id_sub_001/datasink/result_datasink.pklz"
+        }
+    ]
+}

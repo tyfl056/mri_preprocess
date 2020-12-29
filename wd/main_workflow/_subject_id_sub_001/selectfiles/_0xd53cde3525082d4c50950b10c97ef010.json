@@ -1,0 +1,25 @@
+[
+    [
+        "force_lists",
+        false
+    ],
+    [
+        "raise_on_empty",
+        false
+    ],
+    [
+        "sort_filelist",
+        true
+    ],
+    [
+        "subject_id",
+        "sub_001"
+    ],
+    [
+        "needed_outputs",
+        [
+            "anat",
+            "subject_id"
+        ]
+    ]
+]

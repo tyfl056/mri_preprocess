@@ -1,0 +1,101 @@
+[
+    {
+        "group": 1,
+        "imports": [],
+        "name": "00_selectfiles",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "00_selectfiles"
+        ],
+        "name": "01_bias_correction",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "01_bias_correction"
+        ],
+        "name": "02_gunzip_anat",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "02_gunzip_anat"
+        ],
+        "name": "03_new_segment",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "03_new_segment"
+        ],
+        "name": "04_gm-wm_image",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "03_new_segment",
+            "04_gm-wm_image"
+        ],
+        "name": "05_copy_header",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "03_new_segment",
+            "05_copy_header"
+        ],
+        "name": "06_direct",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "03_new_segment"
+        ],
+        "name": "07_brain_mask",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "00_selectfiles"
+        ],
+        "name": "08_joinpath",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [],
+        "name": "09_tpm_bbox",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "03_new_segment",
+            "09_tpm_bbox"
+        ],
+        "name": "10_warp_anat",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "08_joinpath",
+            "03_new_segment",
+            "10_warp_anat",
+            "07_brain_mask",
+            "06_direct"
+        ],
+        "name": "11_datasink",
+        "size": 1
+    }
+]

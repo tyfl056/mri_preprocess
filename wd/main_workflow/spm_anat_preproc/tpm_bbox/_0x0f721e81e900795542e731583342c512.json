@@ -1,0 +1,19 @@
+[
+    [
+        "function_str",
+        "def get_bounding_box(in_file):\n    \"\"\" Retrieve the bounding box of a volume in millimetres.\"\"\"\n\n    # the imports must be inside if you want them to work in a nipype.Function node.\n    from itertools import product\n\n    import nibabel as nib\n    import numpy as np\n\n    img = nib.load(in_file)\n\n    # eight corners of the 3-D unit cube [0, 0, 0] .. [1, 1, 1]\n    corners = np.array(list(product([0, 1], repeat=3)))\n    # scale to the index range of the volume\n    corners = corners * (np.array(img.shape[:3]) - 1)\n    # apply the affine transform\n    corners = img.affine.dot(np.hstack([corners, np.ones((8, 1))]).T).T[:, :3]\n\n    # get the extents\n    low_corner = np.min(corners, axis=0)\n    high_corner = np.max(corners, axis=0)\n\n    return [low_corner.tolist(), high_corner.tolist()]\n"
+    ],
+    [
+        "in_file",
+        [
+            "/usr/local/MATLAB/R2014a/toolbox/matlab/spm12/tpm/TPM.nii",
+            "a88e25b1a49dca00ff1403928cc19f37"
+        ]
+    ],
+    [
+        "needed_outputs",
+        [
+            "bbox"
+        ]
+    ]
+]
