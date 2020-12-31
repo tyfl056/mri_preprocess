@@ -48,7 +48,7 @@ wf = build_crumb_workflow(attach_functions,
                           data_crumb=data_crumb,
                           in_out_kwargs=crumb_arguments,
                           output_dir=output_dir,
-                          cache_dir=cache_dir,)
+                          cache_dir=cache_dir)
 
 
 print("\033[1;34m")
